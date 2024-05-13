@@ -1,9 +1,8 @@
 import tonMnemonic from "tonweb-mnemonic";
 import TonWeb from "tonweb";
 
-const mnemonic =
-  "sound effort chicken detail prison liberty radio intact surprise rely worth elite bone journey sketch save uncle remain switch hello labor item swallow crew"; // 24-word passphrase
-const walletVersion = "v4R2"; // v3R2, v4R2, etc.. from tonscan.org
+const mnemonic = process.env.MNEMONICS; // 24-word passphrase
+const walletVersion = process.env.WalletVersion; // v3R2, v4R2, etc.. from tonscan.org
 const nftAddresses = [
   "EQCfEbbDhX4ZHsNc_A3FBXDCxYJ2Mdm-2ggPIBwdhQCsL6d4", // comma-separated NFT addresses in ''
   "EQBVC_oXoYvGI2Mg5Cp0gUa7shMpPsVbDFbwJyU9ToX6WUjg",
